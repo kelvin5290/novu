@@ -3,7 +3,7 @@ import { useLDClient } from 'launchdarkly-react-client-sdk';
 import { useEffect, useRef } from 'react';
 import { useAuth } from './auth/hooks';
 import { getRegionConfig } from './region/region-config';
-import { useRegion } from './region/region-context';
+import { useRegion } from '@/context/region';
 import { useSegment } from './segment/hooks';
 
 export function IdentityProvider({ children }: { children: React.ReactNode }) {
